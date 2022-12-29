@@ -1,4 +1,5 @@
 import com.example.Feline;
+import com.example.Lion;
 import com.example.Predator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,6 +8,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
+
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
     @Mock
@@ -30,4 +32,4 @@ public class FelineTest {
         int actualKittens = 1;
         assertEquals(feline.getKittens(), actualKittens);
     }
-}
+    }

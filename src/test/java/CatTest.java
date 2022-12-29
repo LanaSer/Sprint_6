@@ -7,13 +7,14 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
+
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
     @Mock
     Feline feline;
     @Test
     public void getSoundCat(){
-        Cat cat = new Cat();
+        Cat cat = new Cat(feline);
         String actualSound = "Мяу";
         assertEquals(cat.getSound(),actualSound);
     }
